@@ -1,0 +1,11 @@
+.circleci/
+.nyc_output/
+coverage/
+node_modules/
+test/
+.editorconfig
+.eslintrc
+.gitignore
+.npmrc
+.idea/
+flow-typed/
