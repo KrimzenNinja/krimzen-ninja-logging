@@ -2,11 +2,11 @@
 
 ![NPM](https://nodei.co/npm/krimzen-ninja-logging.png)
 
-![CircleCi](https://circleci.com/gh/krimzenNinja/krimzen-ninja-logging.svg?style=shield)
+![CircleCi](https://circleci.com/gh/KrimZenNinja/krimzen-ninja-logging.svg?style=shield)
 ![Known Vulnerabilities](https://snyk.io/test/npm/krimzen-ninja-logging/badge.svg)
-[![codecov](https://codecov.io/gh/krimzenNinja/krimzen-ninja-logging/branch/master/graph/badge.svg)](https://codecov.io/gh/krimzenNinja/krimzen-ninja-logging)
+[![codecov](https://codecov.io/gh/KrimZenNinja/krimzen-ninja-logging/branch/master/graph/badge.svg)](https://codecov.io/gh/KrimZenNinja/krimzen-ninja-logging)
 
-KrimZen Ninja convention based logging for node applications
+Handles logging in a krimzen-ninja application
 
 ## Install
 
@@ -23,11 +23,11 @@ myModule()
 
 ## API
 
-[See details](https://github.com/krimzenNinja/krimzen-ninja-logging/blob/master/API.md)
+[See details](https://github.com/KrimZenNinja/krimzen-ninja-logging/blob/master/API.md)
 
 ## License
 
-MIT © [Ryan Kotzen](https://github.com/krimzenNinja)
+MIT © [Ryan Kotzen](https://github.com/KrimZenNinja)
 
 ## Contributing to this module
 

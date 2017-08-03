@@ -1,4 +1,0 @@
-[ignore]
-.*/lib
-.*/coverage
-.*/node_modules/documentation
