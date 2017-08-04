@@ -49,3 +49,16 @@ You can either do releases from the master branch or follow the LTS model and br
 ### Snyk dependency checking
 
 You can either add your project via the [web dashboard](https://snyk.io/) or via the cli by installing the lib `npm i -g snyk` and then running the setup `snyk wizzard`.
+
+
+# Research
+
+https://thepracticalsysadmin.com/introduction-to-logstashelasticsearchkibana/
+https://www.elastic.co/products/logstash
+https://www.elastic.co/products/kibana
+
+https://github.com/pinojs/pino
+https://www.npmjs.com/package/express-pino-logger
+https://github.com/pinojs/pino/blob/master/docs/transports.md
+
+https://www.npmjs.com/package/pino-debug
