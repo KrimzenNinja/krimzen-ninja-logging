@@ -50,8 +50,14 @@ You can either do releases from the master branch or follow the LTS model and br
 
 You can either add your project via the [web dashboard](https://snyk.io/) or via the cli by installing the lib `npm i -g snyk` and then running the setup `snyk wizzard`.
 
+# Log Levels
+
+http://www.masterzen.fr/2013/01/13/the-10-commandments-of-logging/
+https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
 
 # Research
+
+
 
 https://thepracticalsysadmin.com/introduction-to-logstashelasticsearchkibana/
 https://www.elastic.co/products/logstash
