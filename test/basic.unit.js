@@ -8,9 +8,11 @@ describe('logger', () => {
     describe('initialise', function() {
         it('should throw an error if no options are provided', function() {
             expect(() => logger.initialise()).toThrow(IsRequiredError);
+            expect(() => logger.initialise()).toThrow(/options/);
         });
         it('should throw an error if no name is set on the options object', function() {
             expect(() => logger.initialise({})).toThrow(IsRequiredError);
+            expect(() => logger.initialise({})).toThrow(/options\.name/);
         });
         it('should also work for production', function() {
             process.env.NODE_ENV = 'production';
