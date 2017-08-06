@@ -1,5 +1,5 @@
-//const debug = require('debug')('krimzen-ninja-logging');
 const createPino = require('pino');
+import IsRequiredError from './errors/IsRequiredError';
 let _pino;
 
 const consoleMap = {
@@ -14,10 +14,10 @@ const consoleMap = {
 
 function initialise(opts) {
     if (!opts) {
-        throw new Error('You must provide options to the initialise method');
+        throw new IsRequiredError('options', initialise.name);
     }
     if (!opts.name) {
-        throw new Error('You must provide options.name to the initialise method');
+        throw new IsRequiredError('options.name', initialise.name);
     }
     if (process.env.NODE_ENV !== 'production') {
         if (opts.prettyPrint === undefined) {

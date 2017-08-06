@@ -1,5 +1,5 @@
 import logger from '../src';
-
+import IsRequiredError from '../src/errors/IsRequiredError';
 afterEach(function() {
     logger.reset();
     process.env.NODE_ENV = 'test';
@@ -7,10 +7,10 @@ afterEach(function() {
 describe('logger', () => {
     describe('initialise', function() {
         it('should throw an error if no options are provided', function() {
-            expect(() => logger.initialise()).toThrow('You must provide options to the initialise method');
+            expect(() => logger.initialise()).toThrow(IsRequiredError);
         });
         it('should throw an error if no name is set on the options object', function() {
-            expect(() => logger.initialise({})).toThrow('You must provide options.name to the initialise method');
+            expect(() => logger.initialise({})).toThrow(IsRequiredError);
         });
         it('should also work for production', function() {
             process.env.NODE_ENV = 'production';
