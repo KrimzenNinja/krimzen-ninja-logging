@@ -1,5 +1,5 @@
 const createPino = require('pino');
-import IsRequiredError from './errors/IsRequiredError';
+import { IsRequiredError } from 'krimzen-ninja-common-errors';
 let _pino;
 
 const consoleMap = {

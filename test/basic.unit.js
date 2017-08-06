@@ -1,5 +1,5 @@
 import logger from '../src';
-import IsRequiredError from '../src/errors/IsRequiredError';
+import { IsRequiredError } from 'krimzen-ninja-common-errors';
 afterEach(function() {
     logger.reset();
     process.env.NODE_ENV = 'test';

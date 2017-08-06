@@ -81,6 +81,7 @@
     "snyk": "^1.36.2"
   },
   "dependencies": {
+    "krimzen-ninja-common-errors": "^0.2.1",
     "pino": "^4.7.1"
   }
 }
