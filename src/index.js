@@ -12,6 +12,15 @@ const consoleMap = {
     trace: 'trace'
 };
 
+const logger = {
+    initialise,
+    consoleMap,
+    overrideConsole,
+    child,
+    pino,
+    reset
+};
+
 function initialise(opts) {
     if (!opts) {
         throw new IsRequiredError('options', initialise.name);
@@ -28,7 +37,7 @@ function initialise(opts) {
         }
     }
     _pino = createPino(opts);
-    return _pino;
+    return logger;
 }
 
 function overrideConsole() {
@@ -39,7 +48,7 @@ function overrideConsole() {
             _pino[pinoMethod].apply(_pino, arguments);
         };
     });
-    return _pino;
+    return logger;
 }
 
 function ensureInitialised(methodName) {
@@ -60,13 +69,7 @@ function pino() {
 
 function reset() {
     _pino = undefined;
+    return logger;
 }
 
-export default {
-    initialise,
-    consoleMap,
-    overrideConsole,
-    child,
-    pino,
-    reset
-};
+export default logger;

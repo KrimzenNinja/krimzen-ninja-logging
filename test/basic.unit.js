@@ -18,6 +18,9 @@ describe('logger', () => {
             process.env.NODE_ENV = 'production';
             logger.initialise({ name: 'krimzen-ninja-logging' });
         });
+        it('should allow chaining functions', function() {
+            logger.initialise({ name: 'krimzen-ninja-logging' }).overrideConsole();
+        });
         describe('prettyPrint', function() {
             it('should default prettyPrint to true for non production', function() {
                 let opts = { name: 'krimzen-ninja-logging' };
