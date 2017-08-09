@@ -6,28 +6,28 @@
 
 ### logger
 
-[src/index.js:15-22](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L15-L22 "Source code on GitHub")
+[src/index.js:15-22](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L15-L22 "Source code on GitHub")
 
 #### initialise
 
-[src/index.js:16-16](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L16-L16 "Source code on GitHub")
+[src/index.js:16-16](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L16-L16 "Source code on GitHub")
 
 #### consoleMap
 
-[src/index.js:17-17](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L17-L17 "Source code on GitHub")
+[src/index.js:17-17](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L17-L17 "Source code on GitHub")
 
 #### overrideConsole
 
-[src/index.js:18-18](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L18-L18 "Source code on GitHub")
+[src/index.js:18-18](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L18-L18 "Source code on GitHub")
 
 #### child
 
-[src/index.js:19-19](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L19-L19 "Source code on GitHub")
+[src/index.js:19-19](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L19-L19 "Source code on GitHub")
 
 #### pino
 
-[src/index.js:20-20](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L20-L20 "Source code on GitHub")
+[src/index.js:20-20](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L20-L20 "Source code on GitHub")
 
 #### reset
 
-[src/index.js:21-21](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/a5a57ba7e9a095d1674489ebf41e629b36332d32/src/index.js#L21-L21 "Source code on GitHub")
+[src/index.js:21-21](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L21-L21 "Source code on GitHub")
