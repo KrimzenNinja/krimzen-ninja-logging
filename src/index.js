@@ -33,7 +33,11 @@ function initialise(opts) {
             opts.prettyPrint = true;
         }
         if (opts.level === undefined) {
-            opts.level = 'trace';
+            opts.level = process.env.LEVEL || 'trace';
+        }
+    } else {
+        if (opts.level === undefined) {
+            opts.level = process.env.LEVEL || 'info';
         }
     }
     _pino = createPino(opts);

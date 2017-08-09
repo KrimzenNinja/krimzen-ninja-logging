@@ -1,8 +1,9 @@
 import logger from '../src';
 import { IsRequiredError } from 'krimzen-ninja-common-errors';
-afterEach(function() {
+beforeEach(function() {
     logger.reset();
     process.env.NODE_ENV = 'test';
+    delete process.env.LEVEL;
 });
 describe('logger', () => {
     describe('initialise', function() {
@@ -43,6 +44,26 @@ describe('logger', () => {
                 let opts = { name: 'krimzen-ninja-logging', level: 'warn' };
                 logger.initialise(opts);
                 expect(opts.level).toBe('warn');
+            });
+            it('should allow you to set the level via environment variables for non production', function() {
+                let opts = { name: 'krimzen-ninja-logging' };
+                process.env.LEVEL = 'fatal';
+                logger.initialise(opts);
+                expect(opts.level).toBe('fatal');
+            });
+            it('should allow you to set the level via environment variables for production', function() {
+                let opts = { name: 'krimzen-ninja-logging' };
+                process.env.LEVEL = 'fatal';
+                process.env.NODE_ENV = 'production';
+                logger.initialise(opts);
+                expect(opts.level).toBe('fatal');
+            });
+            it('should allow you to override the level set in env by passing it in as an option.', function() {
+                let opts = { name: 'krimzen-ninja-logging', level: 'trace' };
+                process.env.LEVEL = 'fatal';
+                process.env.NODE_ENV = 'production';
+                logger.initialise(opts);
+                expect(opts.level).toBe('trace');
             });
         });
     });
