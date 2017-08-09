@@ -6,11 +6,11 @@
 
 ### logger
 
-[src/index.js:19-26](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L19-L26 "Source code on GitHub")
+[src/index.js:19-26](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/fbd170f5d595d1d804feb3a6166ea6653c02ee32/src/index.js#L19-L26 "Source code on GitHub")
 
 ### initialise
 
-[src/index.js:39-60](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L39-L60 "Source code on GitHub")
+[src/index.js:39-60](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/fbd170f5d595d1d804feb3a6166ea6653c02ee32/src/index.js#L39-L60 "Source code on GitHub")
 
 Initialises the wrapper for the pino logger
 
@@ -28,7 +28,7 @@ Returns **[logger](#logger)**
 
 ### overrideConsole
 
-[src/index.js:66-75](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L66-L75 "Source code on GitHub")
+[src/index.js:66-75](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/fbd170f5d595d1d804feb3a6166ea6653c02ee32/src/index.js#L66-L75 "Source code on GitHub")
 
 Uses monkey-patching to override the console methods and map them to the pino methods
 
@@ -36,7 +36,7 @@ Returns **[logger](#logger)**
 
 ### child
 
-[src/index.js:89-92](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L89-L92 "Source code on GitHub")
+[src/index.js:89-92](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/fbd170f5d595d1d804feb3a6166ea6653c02ee32/src/index.js#L89-L92 "Source code on GitHub")
 
 Creates a [child logger](https://github.com/pinojs/pino/blob/HEAD/docs/API.md#child),
 setting all key-value pairs in `bindings` as properties
@@ -46,7 +46,7 @@ Returns **any**
 
 ### pino
 
-[src/index.js:98-101](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L98-L101 "Source code on GitHub")
+[src/index.js:98-101](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/fbd170f5d595d1d804feb3a6166ea6653c02ee32/src/index.js#L98-L101 "Source code on GitHub")
 
 Returns the underlying [pino logger](https://github.com/pinojs/pino)
 
