@@ -22,7 +22,7 @@
     "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\"",
     "lint": "eslint src test --fix",
     "lint-ci": "eslint src test",
-    "docs": "documentation readme src --section=API --github --document-exported --readme-file=\"API.md\"",
+    "docs": "documentation readme src --section=API --github --readme-file=\"API.md\"",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",

@@ -6,28 +6,48 @@
 
 ### logger
 
-[src/index.js:15-22](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L15-L22 "Source code on GitHub")
+[src/index.js:19-26](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L19-L26 "Source code on GitHub")
 
-#### initialise
+### initialise
 
-[src/index.js:16-16](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L16-L16 "Source code on GitHub")
+[src/index.js:39-60](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L39-L60 "Source code on GitHub")
 
-#### consoleMap
+Initialises the wrapper for the pino logger
 
-[src/index.js:17-17](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L17-L17 "Source code on GitHub")
+**Parameters**
 
-#### overrideConsole
+-   `options`  The [pino options](https://github.com/pinojs/pino/blob/HEAD/docs/API.md#parameters) to setup the logger.
+    -   `options.name` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the script/application that you would like to setup logging for
+    -   `options.prettyPrint` **([boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) \| [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object))** (boolean|object): enables [pino.pretty](#pretty). This is intended for non-production configurations.
+        This may be set to a configuration object as outlined in [pino.pretty](#pretty). Default when `NODE_ENV=production` `false`. Default when `NODE_ENV!=production` `true`.
+    -   `options.level` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** : one of `'fatal'`, `'error'`, `'warn'`, `'info`', `'debug'`, `'trace'`;
+        also `'silent'` is supported to disable logging. Any other value  defines a custom level and requires supplying a
+        level value via `levelVal`. Default when `NODE_ENV=production` `info`. Default when `NODE_ENV!=production` `trace`.
 
-[src/index.js:18-18](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L18-L18 "Source code on GitHub")
+Returns **[logger](#logger)** 
 
-#### child
+### overrideConsole
 
-[src/index.js:19-19](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L19-L19 "Source code on GitHub")
+[src/index.js:66-75](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L66-L75 "Source code on GitHub")
 
-#### pino
+Uses monkey-patching to override the console methods and map them to the pino methods
 
-[src/index.js:20-20](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L20-L20 "Source code on GitHub")
+Returns **[logger](#logger)** 
 
-#### reset
+### child
 
-[src/index.js:21-21](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/cfb3c47749acdde810c56ef1baf6f94f5633ae23/src/index.js#L21-L21 "Source code on GitHub")
+[src/index.js:89-92](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L89-L92 "Source code on GitHub")
+
+Creates a [child logger](https://github.com/pinojs/pino/blob/HEAD/docs/API.md#child),
+setting all key-value pairs in `bindings` as properties
+in the log lines. All serializers will be applied to the given pair.
+
+Returns **any** 
+
+### pino
+
+[src/index.js:98-101](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/3d86d553e87136a55098b1e82362700f3eb96daf/src/index.js#L98-L101 "Source code on GitHub")
+
+Returns the underlying [pino logger](https://github.com/pinojs/pino)
+
+Returns **any** 
