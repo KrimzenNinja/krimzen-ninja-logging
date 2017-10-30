@@ -64,24 +64,24 @@
   "homepage": "https://github.com/KrimZenNinja/krimzen-ninja-logging#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.1.1",
-    "babel-jest": "^20.0.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.5.2",
-    "codecov": "^2.2.0",
-    "documentation": "4.0.0-rc.1",
+    "codecov": "^3.0.0",
+    "documentation": "5.3.3",
     "eslint": "^4.1.1",
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "jest-cli": "^20.0.0",
-    "npm-watch": "^0.2.0",
+    "jest-cli": "^21.2.1",
+    "npm-watch": "^0.3.0",
     "nsp": "^2.6.3",
     "prettier": "^1.4.4",
     "rimraf": "^2.6.1",
     "snyk": "^1.36.2"
   },
   "dependencies": {
-    "krimzen-ninja-common-errors": "^0.2.1",
+    "krimzen-ninja-common-errors": "^0.3.0",
     "pino": "^4.7.1"
   }
 }
