@@ -1,5 +1,7 @@
 # krimzen-ninja-logging
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KrimzenNinja/krimzen-ninja-logging.svg)](https://greenkeeper.io/)
+
 ![NPM](https://nodei.co/npm/krimzen-ninja-logging.png)
 
 ![CircleCi](https://circleci.com/gh/KrimZenNinja/krimzen-ninja-logging.svg?style=shield)
