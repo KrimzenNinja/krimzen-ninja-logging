@@ -1,6 +1,8 @@
-const createPino = require('pino');
-import { IsRequiredError } from 'krimzen-ninja-common-errors';
-let _pino;
+'use strict'
+
+const createPino = require('pino')
+const { IsRequiredError } = require('krimzen-ninja-common-errors')
+let _pino
 
 const consoleMap = {
     fatal: 'fatal',
@@ -10,7 +12,7 @@ const consoleMap = {
     info: 'info',
     debug: 'debug',
     trace: 'trace'
-};
+}
 
 /**
  * @name logger
@@ -23,7 +25,7 @@ const logger = {
     child,
     pino,
     reset
-};
+}
 
 /**
  * Initialises the wrapper for the pino logger
@@ -38,25 +40,25 @@ const logger = {
  */
 function initialise(options) {
     if (!options) {
-        throw new IsRequiredError('options', initialise.name);
+        throw new IsRequiredError('options', initialise.name)
     }
     if (!options.name) {
-        throw new IsRequiredError('options.name', initialise.name);
+        throw new IsRequiredError('options.name', initialise.name)
     }
     if (process.env.NODE_ENV !== 'production') {
         if (options.prettyPrint === undefined) {
-            options.prettyPrint = true;
+            options.prettyPrint = true
         }
         if (options.level === undefined) {
-            options.level = process.env.LEVEL || 'trace';
+            options.level = process.env.LEVEL || 'trace'
         }
     } else {
         if (options.level === undefined) {
-            options.level = process.env.LEVEL || 'info';
+            options.level = process.env.LEVEL || 'info'
         }
     }
-    _pino = createPino(options);
-    return logger;
+    _pino = createPino(options)
+    return logger
 }
 
 /**
@@ -64,19 +66,19 @@ function initialise(options) {
  * @returns {logger}
  */
 function overrideConsole() {
-    ensureInitialised('overrideConsole');
+    ensureInitialised('overrideConsole')
     Object.keys(consoleMap).forEach(function(consoleMethod) {
-        const pinoMethod = consoleMap[consoleMethod];
+        const pinoMethod = consoleMap[consoleMethod]
         console[consoleMethod] = function() {
-            _pino[pinoMethod].apply(_pino, arguments);
-        };
-    });
-    return logger;
+            _pino[pinoMethod].apply(_pino, arguments)
+        }
+    })
+    return logger
 }
 
 function ensureInitialised(methodName) {
     if (!_pino) {
-        throw new Error('You must call initialise before calling ' + methodName);
+        throw new Error('You must call initialise before calling ' + methodName)
     }
 }
 
@@ -87,8 +89,8 @@ function ensureInitialised(methodName) {
  * @returns {*}
  */
 function child() {
-    ensureInitialised('child');
-    return _pino.child.apply(_pino, arguments);
+    ensureInitialised('child')
+    return _pino.child.apply(_pino, arguments)
 }
 
 /**
@@ -96,13 +98,13 @@ function child() {
  * @returns {*}
  */
 function pino() {
-    ensureInitialised('pino');
-    return _pino;
+    ensureInitialised('pino')
+    return _pino
 }
 
 function reset() {
-    _pino = undefined;
-    return logger;
+    _pino = undefined
+    return logger
 }
 
-export default logger;
+module.exports = logger
