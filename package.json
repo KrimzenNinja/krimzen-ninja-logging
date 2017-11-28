@@ -6,7 +6,7 @@
   },
   "description": "Handles logging in a krimzen-ninja application",
   "files": [
-    "lib"
+    "src"
   ],
   "main": "./src/index.js",
   "scripts": {
