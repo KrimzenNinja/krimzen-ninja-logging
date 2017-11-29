@@ -9,11 +9,11 @@
 
 ## logger
 
-[src/index.js:7-15](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/2cf55d29d5261f5defbd4ae4ee8bd8e4c91e26df/src/index.js#L7-L15 "Source code on GitHub")
+[src/index.js:7-15](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/8d211fb2c20f98e008763926ba5443a9af2c40ab/src/index.js#L7-L15 "Source code on GitHub")
 
 ## 
 
-[src/index.js:21-28](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/2cf55d29d5261f5defbd4ae4ee8bd8e4c91e26df/src/index.js#L21-L28 "Source code on GitHub")
+[src/index.js:21-28](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/8d211fb2c20f98e008763926ba5443a9af2c40ab/src/index.js#L21-L28 "Source code on GitHub")
 
 Initialises the wrapper for the pino logger
 
@@ -31,7 +31,7 @@ Returns **[logger](#logger)**
 
 ## overrideConsole
 
-[src/index.js:68-77](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/2cf55d29d5261f5defbd4ae4ee8bd8e4c91e26df/src/index.js#L68-L77 "Source code on GitHub")
+[src/index.js:68-77](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/8d211fb2c20f98e008763926ba5443a9af2c40ab/src/index.js#L68-L77 "Source code on GitHub")
 
 Uses monkey-patching to override the console methods and map them to the pino methods
 
@@ -39,7 +39,7 @@ Returns **[logger](#logger)**
 
 ## child
 
-[src/index.js:91-94](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/2cf55d29d5261f5defbd4ae4ee8bd8e4c91e26df/src/index.js#L91-L94 "Source code on GitHub")
+[src/index.js:91-94](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/8d211fb2c20f98e008763926ba5443a9af2c40ab/src/index.js#L91-L94 "Source code on GitHub")
 
 Creates a [child logger](https://github.com/pinojs/pino/blob/HEAD/docs/API.md#child),
 setting all key-value pairs in `bindings` as properties
@@ -49,7 +49,7 @@ Returns **any**
 
 ## pino
 
-[src/index.js:100-103](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/2cf55d29d5261f5defbd4ae4ee8bd8e4c91e26df/src/index.js#L100-L103 "Source code on GitHub")
+[src/index.js:100-103](https://github.com/KrimzenNinja/krimzen-ninja-logging/blob/8d211fb2c20f98e008763926ba5443a9af2c40ab/src/index.js#L100-L103 "Source code on GitHub")
 
 Returns the underlying [pino logger](https://github.com/pinojs/pino)
 
