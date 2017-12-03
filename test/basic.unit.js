@@ -114,4 +114,10 @@ describe('logger', () => {
             logger.pino().info({ obj: 42 }, 'hello world')
         })
     })
+    describe('direct log methods', function() {
+        it('should allow you to call the pino methods directly after initialisation', function() {
+            logger.initialise({ name: 'krimzen-ninja-logging' })
+            logger.info({ obj: 42 }, 'hello world')
+        })
+    })
 })

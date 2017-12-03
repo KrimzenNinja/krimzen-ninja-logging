@@ -107,4 +107,11 @@ function reset() {
     return logger
 }
 
+Object.keys(consoleMap).forEach(logLevel => {
+    logger[logLevel] = function() {
+        ensureInitialised(logLevel)
+        _pino[logLevel].apply(_pino, arguments)
+    }
+})
+
 module.exports = logger
