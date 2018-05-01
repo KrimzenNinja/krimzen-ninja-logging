@@ -18,6 +18,7 @@
     "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=100 --no-semi \"{src,test}/**/*.js\"",
     "lint": "npm run lint-ci -- --fix",
     "lint-ci": "eslint \"src/**/*.js\" \"test/**/*.js\" \"config/**/*.js\"",
+    "update": "npm-check -Eu",
     "docs": "documentation build src/index.js --github --format md --output \"API.md\"",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
@@ -56,20 +57,21 @@
   },
   "homepage": "https://github.com/KrimZenNinja/krimzen-ninja-logging#readme",
   "devDependencies": {
-    "codecov": "^3.0.0",
-    "documentation": "6.3.1",
-    "eslint": "^4.12.0",
+    "codecov": "3.0.1",
+    "documentation": "6.3.2",
+    "eslint": "4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "jest-cli": "^22.0.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest-cli": "22.4.3",
     "npm-watch": "^0.3.0",
-    "nsp": "^3.1.0",
-    "prettier": "^1.8.2",
-    "snyk": "^1.52.0"
+    "nsp": "3.2.1",
+    "prettier": "1.12.1",
+    "snyk": "1.78.0"
   },
   "dependencies": {
-    "krimzen-ninja-common-errors": "^0.3.2",
-    "pino": "^4.10.2"
+    "krimzen-ninja-common-errors": "0.3.3",
+    "npm-check": "^5.7.0",
+    "pino": "4.16.1"
   }
 }
