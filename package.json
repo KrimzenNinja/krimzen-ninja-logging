@@ -72,6 +72,6 @@
   "dependencies": {
     "krimzen-ninja-common-errors": "0.3.3",
     "npm-check": "^5.7.0",
-    "pino": "4.16.1"
+    "pino": "4.17.3"
   }
 }
