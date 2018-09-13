@@ -64,7 +64,7 @@
     "eslint-plugin-node": "6.0.1",
     "eslint-plugin-prettier": "2.6.0",
     "jest-cli": "22.4.3",
-    "npm-watch": "^0.3.0",
+    "npm-watch": "^0.4.0",
     "nsp": "3.2.1",
     "prettier": "1.12.1",
     "snyk": "1.80.0"
