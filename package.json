@@ -67,7 +67,7 @@
     "npm-watch": "^0.3.0",
     "nsp": "3.2.1",
     "prettier": "1.12.1",
-    "snyk": "1.80.0"
+    "snyk": "1.106.0"
   },
   "dependencies": {
     "krimzen-ninja-common-errors": "0.3.3",
